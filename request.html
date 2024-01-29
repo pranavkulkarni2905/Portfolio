@@ -297,12 +297,12 @@
     </style>
 </head>
 <body>
-  <form class="my-form">
+  <form class="my-form" action="https://formsubmit.co/25037bb8412b403036b90067b1af18e9" method="POST">
     <div class="container">
       <h1>Get in touch!</h1>
       <ul>
         <li>
-          <select>
+          <select name="degree">
             <option selected disabled>-- Select Degree --</option>
             <option>B.Tech / BE</option>
             <option>Diploma</option>
@@ -312,18 +312,18 @@
         </li>
         <li>
           <div class="grid grid-2">
-            <input type="text" placeholder="First Name" required>  
-            <input type="text" placeholder="Last Name" required>
+            <input type="text" name="first-name" placeholder="First Name" required>  
+            <input type="text" name="last-name" placeholder="Last Name" required>
           </div>
         </li>
         <li>
           <div class="grid grid-2">
-            <input type="email" placeholder="Email" required>  
-            <input type="tel" placeholder="Phone" required>
+            <input type="email" name="email" placeholder="Email" required>  
+            <input type="tel" name="phone" placeholder="Phone" required>
           </div>
         </li>   
         <li>
-          <select>
+          <select name="gender">
             <option selected disabled>-- Select Gender --</option>
             <option>Female</option>
             <option>Male</option>
@@ -333,31 +333,36 @@
         </li>
         <li>
           
-            <input type="text" placeholder="Project Name" required>  
+            <input type="text" name="project-name" placeholder="Project Name" required>  
         </li>   
         <li>
           
-          <input type="text" placeholder="College Name" required>  
+          <input type="text" name="college-name" placeholder="College Name" required>  
       </li>    
       <li>
           
         <div class="grid grid-2">
-          <input type="text" placeholder="City" required>  
-          <input type="text" placeholder="State" required>
+          <input type="text" placeholder="City" name="city" required>  
+          <input type="text" placeholder="State" name="state" required>
         </div>
     </li>   
     <li>
           
-      <input type="url" placeholder="Github Profile URL" required>  
+      <input type="url" name="github-url" placeholder="Github Profile URL" required>  
   </li>  
         <li>
-          <textarea placeholder="For What Purpose you want Project"></textarea>
+          <textarea name="purpose" placeholder="For What Purpose you want Project"></textarea>
         </li>   
         <li>
           <input type="checkbox" id="terms">
           <label for="terms">I have read and agreed with <a href="">the terms and conditions.</a></label>
         </li>  
         <li>
+
+          
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://pranav-kulkarni-portfolio.vercel.app/thanks.html">
+          
           <div class="grid grid-3">
             <div class="required-msg">REQUIRED FIELDS</div>
             <button class="btn-grid" type="submit" disabled>
